@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARITEC BARRETO</title>
+    <style>
+        :root {
+            --azul-marino: #003366;
+            --turquesa: #0099A8;
+            --gris: #4D4D4D;
+            --blanco: #FFFFFF;
+            --naranja: #FF6600;
+        }
+
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--blanco);
+            color: var(--gris);
+        }
+
+        header {
+            background-color: var(--azul-marino);
+            color: var(--blanco);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header .logo span {
+            color: var(--turquesa);
+        }
+
+        header nav a {
+            color: var(--blanco);
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: var(--turquesa);
+            color: var(--blanco);
+            text-align: center;
+            padding: 180px 20px 120px 20px;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: var(--naranja);
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: var(--azul-marino);
+            color: var(--blanco);
+            width: 220px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .btn-card {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: var(--naranja);
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: var(--gris);
+            color: var(--blanco);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MARITEC <span>BARRETO</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a MARITEC BARRETO</h1>
+        <p>Innovación y excelencia en Ingeniería Oceánica y Construcción Costera</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Espigones y Rompeolas</h3>
+                <p>Protección costera y control de erosión.</p>
+                <a href="#" class="btn-card">Ver Proyecto</a>
+            </div>
+            <div class="card">
+                <h3>Diques y Escolleras</h3>
+                <p>Infraestructura marina resistente y duradera.</p>
+                <a href="#" class="btn-card">Ver Proyecto</a>
+            </div>
+            <div class="card">
+                <h3>Puertos y Muelles</h3>
+                <p>Diseño y construcción de infraestructura portuaria.</p>
+                <a href="#" class="btn-card">Ver Proyecto</a>
+            </div>
+            <div class="card">
+                <h3>Obras Hidráulicas</h3>
+                <p>Drenajes, defensas y proyectos de manejo de agua costera.</p>
+                <a href="#" class="btn-card">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects">
+            <p>Proyectos simulados de infraestructura marina y portuaria realizados por MARITEC BARRETO.</p>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Somos líderes en ingeniería oceánica, comprometidos con la seguridad, innovación y sostenibilidad de las costas mexicanas.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: contacto@maritecbarreto.com</p>
+        <p>Teléfono: +52 (314) 123 4567</p>
+        <p>Ubicación: Manzanillo, Colima, México</p>
+        <a href="mailto:contacto@maritecbarreto.com" class="btn">Enviar Correo</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MARITEC BARRETO S.A. de C.V. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
